@@ -127,8 +127,36 @@ console.log(lf << 1);
 
 /* ---------------------------- right shift (>>) ---------------------------- */
 
-let rs = 0b0101; // número 5 em binário
+let rs1 = 0b0101; // número 5 em binário
 //         ----
 //         0010     número 2 em binário
 
-console.log(lf >> 1);
+console.log(rs1 >> 1);
+
+/* um deslocamento a direita (>>) de um número negativo é feito da seguinte
+maneira: (exemplo: 5 >> 2)
+
+1° passo: é feito o deslocamento
+  11111111111111111111111111111011 -> xx111111111111111111111111111110
+
+2° passo: no lugar do 'x' é preenchido com 1 para manter o sinal
+  11111111111111111111111111111110
+
+o número obtido é -2
+*/
+
+let rs2 = -5;
+console.log(rs2 >> 2);
+
+/* -------------------------- unsigned right shift -------------------------- */
+
+/* um deslocamento a direita nao assinalado (>>>) de um número negativo é feito
+da seguinte maneira: (exemplo: 5 >>> 2)
+
+  11111111111111111111111111111011 -> 00111111111111111111111111111110
+
+o número obtido é 1073741822
+*/
+
+let urs = -5;
+console.log(urs >>> 2);
