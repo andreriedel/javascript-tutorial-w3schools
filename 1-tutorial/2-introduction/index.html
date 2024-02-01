@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+  </head>
+
+  <body>
+    <p id="demo1">JavaScript can change HTML content.</p>
+    <button type="button" onclick="changeElement()">Click Me!</button>
+
+    <hr>
+
+    <p>JavaScript can change HTML attribute values.</p>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="changeImgSrc(true)">Turn on the light</button>
+    <button onclick="changeImgSrc(false)">Turn off the light</button>
+
+    <hr>
+
+    <p id="demo2">JavaScript can change HTML styles (CSS).</p>
+    <button type="button" onclick="changeStyle()">Click Me!</button>
+
+    <hr>
+
+    <p id="demo3">JavaScript can hide HTML elements.</p>
+    <button type="button" onclick="hideElement()">Click Me!</button>
+
+    <hr>
+
+    <p>JavaScript can show hidden HTML elements.</p>
+    <p id="demo4" style="display:none">Hello JavaScript!</p>
+    <button type="button" onclick="showElement()">Click Me!</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
